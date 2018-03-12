@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//eval()函数会将传入的字符串当做JavaScript代码进行执行。
+			
+			var str = '[{text:"一年级",nodes:[{text:"一年级一班",nodes:[{text:"小明",},{text:"小红",},{text:"小梨",},{text:"小开",},],},{text:"一年级二班",nodes:[{text:"小撒",},{text:"小时",},{text:"小单",},{text:"小好",},],},],},{text:"二年级",nodes:[{text:"二年级一班",nodes:[{text:"小明",},{text:"小红",},{text:"小梨",},{text:"小开",},],},{text:"二年级二班",nodes:[{text:"小撒",},{text:"小时",},{text:"小单",},{text:"小好",},],},],},]'
+			function fn(){
+    			str = eval(str)
+    			return str
+    		}
+    		console.log(typeof(str))
+    		var defaultData = [
+				{
+			        "text": '我的班级',       
+			        "nodes": fn()
+			    }    
+			];
+		</script>
+	</body>
+</html>
