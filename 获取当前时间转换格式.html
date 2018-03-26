@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var nowDate = new Date(); 
+			//nowDate = nowDate-365;
+			//console.log(e.setDate(nowDate.getMonth() + 35))
+		    var year= nowDate.getFullYear();  
+		    var month = nowDate.getMonth();  
+		    var today = nowDate.getDate();  
+		    var hours = nowDate.getHours();  
+		    var minutes = nowDate.getMinutes();  
+		    var seconds = nowDate.getSeconds();  
+		      
+		    if(month >= 1 && month <=9){  
+		        month = "0" + month;  
+		    }  
+		    if(today >= 1 && today <=9){  
+		        today = "0" + today;  
+		    }  
+		    var currentdate = year + "-" + month + "-" + today + " " + hours + ":" +minutes + ":" +seconds
+		    console.log(currentdate)
+		    /*//获取当前时间  
+var currentdate
+function datel(ye){
+	var nowDate = new Date();  
+    var year= nowDate.getFullYear()+ye;  
+    var month = nowDate.getMonth();  
+    var today = nowDate.getDate();  
+    var hours = nowDate.getHours();  
+    var minutes = nowDate.getMinutes();  
+    var seconds = nowDate.getSeconds();  
+      
+    if(month >= 1 && month <=9){  
+        month = "0" + month;  
+    }  
+    if(today >= 1 && today <=9){  
+        today = "0" + today;  
+    }  
+    currentdate = year + "-" + month + "-" + today + " " + hours + ":" +minutes + ":" +seconds
+   
+}*/
+		</script>
+	</body>
+</html>
