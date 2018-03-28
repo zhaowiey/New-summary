@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.onbeforeunload = function (e) {
+			  e = e || window.event;
+			  var y = e.clientY;
+			  if (y <= 0//点击浏览器或者选项卡的关闭按钮
+			  || y >= Math.max(document.body ? document.body.clientHeight : 0, document.documentElement ? document.documentElement.clientHeight : 0)//点击任务栏的关闭按钮
+			  ) {
+			    //IE 和 Firefox 
+			    e.returnValue = "确定要刷新或关闭浏览器窗口？";
+			  }
+			  //谷歌
+			  return "确定要刷新或关闭浏览器窗口？";
+			}
+
+		</script>
+	</body>
+</html>
