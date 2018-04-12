@@ -1,17 +1,17 @@
 ﻿## ES6
 ### 面向对象的继承  ###
-	移动端开发类库为什要用zepto，为什么不是 jQuery 呢？因为 jQuery 的目标是兼容所有主流浏览器，
+   移动端开发类库为什要用zepto，为什么不是 jQuery 呢？因为 jQuery 的目标是兼容所有主流浏览器，
 这就意味着它的大量代码对移动端的浏览器是无用或者低效的。 而 Zepto 只针对移动端浏览器编写，因此体积更小、
 效率更高，更重要的是，它的 API 完全仿照 jQuery ，所以学习成本也很低。
-	
-	但是在开发过程中，我发现 Zepto 还远未成熟，其中包含了一些或大或小的“坑”，与 jQuery 的差距还
+
+但是在开发过程中，我发现 Zepto 还远未成熟，其中包含了一些或大或小的“坑”，与 jQuery 的差距还
 是很明显的，所以写篇文章记录下，希望对后来者有帮助
 注意，本文撰写时 Zepto 版本为 1.0 正式版
 
-	*从哪里下载 Zepto
+  *从哪里下载 Zepto
 这个问题看起来很蠢，从官网下载不就行了嘛！可是你有没有发现下载链接上面有行小字呢？
 
-	There are more modules; a list of all modules is available in the 
+  There are more modules; a list of all modules is available in the 
 README.
 在这个 README 里面你会惊奇地发现，Zepto 源码中有 14 个模块，而官网提供的标准版里面只有 7 个模块！
 而且居然不包含对移动端开发非常重要的 touch 模块（提供对触摸事件的支持）！
