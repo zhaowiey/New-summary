@@ -24,7 +24,7 @@ polyfill，zepto，detect，event，ajax，form，fx 这7个就是标准版包�
 对 .data() 方法的完整支持，像 jQuery 一样用内存对象存储 assets 移除 img 元素后做一些特殊处理，
 用来清理内存 selector 更多的选择器的支持，后面会提到 touch 对触摸事件的支持，比如 tap 事件
 
-####不要用 click 事件，用 tap 代替
+###不要用 click 事件，用 tap 代替
 这个估计已经广为人知了，因为 click 事件有 200~300 ms 的延迟，为了更快的响应，最好用 Zepto 提供
 的 tap 事件
 不相信的话，可以用以下代码测试一下
@@ -39,7 +39,7 @@ polyfill，zepto，detect，event，ajax，form，fx 这7个就是标准版包�
 	});
 ```
 
-####Zepto 对 CSS 选择器的支持
+###Zepto 对 CSS 选择器的支持
 郑重提醒，:text :checkbox :first 等等在 jQuery 里面很常用的选择器，Zepto 不支持！
 原因很简单，jQuery 通过自己编写的 sizzle 引擎来支持 CSS 选择器，而 Zepto 是直接通过浏览器提
 供的 document.querySelectorAll 接口。
@@ -51,7 +51,7 @@ polyfill，zepto，detect，event，ajax，form，fx 这7个就是标准版包�
 
 :visible :hidden :selected :checked :parent :first :last :eq :contains :has
 
-####元素的尺寸计算
+###元素的尺寸计算
 首先 Zepto 没有 .innerHeight() .outerWidth() 等四个方法，其次，它的 .height()/.width() 
 方法也不完善，对于 display:none 的元素，计算出的高宽都是 0
 而这在 jQuery 里面是没有问题的，因为 jQuery 针对这种元素，会先设置其 css 样式设置
@@ -60,7 +60,7 @@ polyfill，zepto，detect，event，ajax，form，fx 这7个就是标准版包�
 https://github.com/jquery/jquery/blob/master/src/css.js#L460
 如果遇到这种特殊情况，可以参考 jQuery 写一个类似的方法
 
-####.prop() 方法的陷阱
+###.prop() 方法的陷阱
 有次我要把一个文本框置为只读，写了这么一行 (‘#text’).prop(‘readonly’,true)结果死活不工作
 找了半天才发现，正确的写法是这样(‘#text’).prop(‘readOnly’, true) ，如果你居然看不出两者
 的差别，那么悄悄提示你：注意大小写！
@@ -86,14 +86,14 @@ https://github.com/jquery/jquery/blob/master/src/css.js#L460
 考虑到这段代码比较简单，我厚颜无耻地抄袭了一下然后给 Zepto 提了一个 pull request ，如果你们喜欢
 这种无脑的用法，可以去评论表达支持（记得用英文）
 
-####.show() 的动画效果
+###.show() 的动画效果
 如果没有 fx_mehods 模块的话，.show() 方法是不支持动画的，不过有了这模块后，动画的支持还是有点小问题，
 如果你调用 $(‘p’).show(‘fast’) ，那么动画完成后你看到的不会是一个半透明的元素，而是全黑不透明的
 因为 Zepto 的 .show() 动画实现的很简单，没有高宽的变化，而是将透明度从 0 逐渐变为 1，所以元素上原来设
 置的透明度就被替代了。
 这种情况下，可以用 .fadeIn() 方法来替代 .show()
 
-####结语
+###结语
 看到这里相信你已经了解为什么我说” Zepto 还远未成熟“，目前它其实还仅仅处于“能用”，远未达到 jQuery “好用”的地步
 
 zeptojs的注意点 不要用 click 事件用 tap 代替 Zepto 对 CSS 选择器的支持 元素的尺寸计算 prop 方法的陷阱 show 的动画效果。
