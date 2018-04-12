@@ -1,5 +1,5 @@
-﻿## ES6
-### 面向对象的继承  ###
+﻿## zepto.js使用时候你会遇到哪些坑
+## zepto.js的注意点  ##
    移动端开发类库为什要用zepto，为什么不是 jQuery 呢？因为 jQuery 的目标是兼容所有主流浏览器，
 这就意味着它的大量代码对移动端的浏览器是无用或者低效的。 而 Zepto 只针对移动端浏览器编写，因此体积更小、
 效率更高，更重要的是，它的 API 完全仿照 jQuery ，所以学习成本也很低。
@@ -68,16 +68,16 @@ https://github.com/jquery/jquery/blob/master/src/css.js#L460
 于是到 jQuery 源码里面一找才发现，还有这么一段 https://github.com/jquery/jquery/blob/master/src/attributes.js#L466
 ```
 	jQuery.each([
-    "tabIndex",
-    "readOnly",
-    "maxLength",
-    "cellSpacing",
-    "cellPadding",
-    "rowSpan",
-    "colSpan",
-    "useMap",
-    "frameBorder",
-    "contentEditable"
+	    "tabIndex",
+	    "readOnly",
+	    "maxLength",
+	    "cellSpacing",
+	    "cellPadding",
+	    "rowSpan",
+	    "colSpan",
+	    "useMap",
+	    "frameBorder",
+	    "contentEditable"
 	], function() {
 	    jQuery.propFix[ this.toLowerCase() ] = this;
 	});
