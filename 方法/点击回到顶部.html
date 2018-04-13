@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{height: 4000px;}
+			#scrollUp{
+				position: fixed;
+			    z-index: 1000;
+			    display: none;
+				bottom: 20px;
+			    right: 23px;
+			    background: url(backtop.gif) no-repeat 0 0;
+			    width: 50px;
+			    height: 50px;
+			    text-indent: -9999px;
+			    transition: background 0.2s ease 0s;
+			}
+			#scrollUp:hover {background: url(backtop.gif) no-repeat 0 -50px;}
+		</style>
+	</head>
+	<body>
+		<a id="scrollUp" href="#top"></a>
+		<script type="text/javascript" src="../jquery.min.js"></script>
+		<script type="text/javascript">
+			backTop()
+			function backTop(gd){
+				if(gd){
+					gd=gd;
+				}else{
+					gd=window;
+				}
+				$(gd).scroll(function(){
+					var BTop = $(gd).scrollTop();
+					if(BTop>800){
+						$('#scrollUp').show();
+					}else{
+						$('#scrollUp').hide();
+					}
+				})
+				$('#backTop').click(function(){
+					var Gd='';
+					if(gd==window){
+						Gd='body,html';						
+					}else{
+						Gd=gd;
+					}					
+					$(Gd).animate({scrollTop: '0px'},800);
+				});
+			}
+		</script>
+	</body>
+</html>
