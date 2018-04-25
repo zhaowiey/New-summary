@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//obj 添加class的元素  name 添加的class名
+			function removeClass(obj,name){
+				var arr = obj.className.split(' ');
+				var onOff = false;
+				var arr1 = [];
+				//console.log(arr)
+				for(var i=0;i<arr.length;i++){
+					if(arr[i]==name){
+						onOff = true;
+						continue;
+					}
+					arr1.push(arr[i]);	
+				}
+				//console.log(arr1)
+				if(onOff){
+					obj.className = arr1.join(' ');
+				}
+			}
+		</script>
+	</body>
+</html>
