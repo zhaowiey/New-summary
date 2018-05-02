@@ -1,0 +1,516 @@
+.baseui4JNEducation{
+	background: #ececec;
+}
+.topbar{
+	height: 95px;
+	background: #2962ff;
+}
+.topbar.gropWrap{
+	height: 75px;
+    background: rgba(47,105,189,.8);
+}
+.gropWrap .userInfo ul li{
+    margin-top: 25px;
+}
+::selection {
+    background: #2962ff;
+}
+.orgInfo div{
+	height: 35px;
+}
+.orgName{
+	padding-top:0;
+}
+.orgInfo{
+	margin-top: 24px;
+}
+.orgInfo div img{
+	max-width: 50px;
+}
+.userInfo ul li{
+	border-left: 1px #fff solid;
+}
+.footer{
+	background:none;
+	border-right: 0;
+}
+.rightbottom{
+	color:#777777;
+	border-top:0;
+	background:none;
+	box-shadow:none;
+	text-align: center;
+	padding-left:0;
+	margin-left:0;
+}
+.viewFramework-product{
+	width: 81%;
+	min-width: 1000px;
+	height: 650px;
+	top: 260px;
+	padding: 0;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,.19);
+}
+.gui-breadcrumb{
+	background: #dee7ff;
+}
+.gui-breadcrumb>.gui-active{
+	color: #448aff;
+}
+.gui-breadcrumb{
+	font-size: 14px;
+}
+.gui-breadcrumb a{
+	color: #6e6e6e;
+}
+.slideWarpper{
+	width:100%;
+	min-width:1300px;
+	height:276px;
+	margin:95px auto 0 auto;
+	background:url('../images/slideWarpper.jpg') center center no-repeat;
+}
+.gui-btn-normal, .gui-btn-normal-disabled{
+	background-color: #1fc792;	
+}
+.gui-btn-normal:hover {
+    background: #00b37a;
+}
+.gui-badge-secondary{
+	color: #ff9c24;
+	background:none;
+}
+.gui-table-dataTool{
+	background: #dfe6ff;
+}
+.gui-table th, .gui-table thead td{
+	background-color: #fff;
+}
+.gui-table tbody>tr.even.hover>td, .gui-table tbody>tr.even:hover+tr.tablesorter-childRow+tr.tablesorter-childRow>td, .gui-table tbody>tr.even:hover+tr.tablesorter-childRow>td, .gui-table tbody>tr.even:hover>td, .gui-table tbody>tr.hover>td, .gui-table tbody>tr:hover+tr.tablesorter-childRow+tr.tablesorter-childRow>td, .gui-table tbody>tr:hover+tr.tablesorter-childRow>td, .gui-table tbody>tr:hover>td{
+	background:none;
+}
+.data {
+    border: 0;
+}
+.gui-tool{
+	border-bottom: 0;
+}
+.sildeMenu{
+	width: 70%;
+    min-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 165px;
+    position: relative;
+    text-align: center;
+}
+.staticLeft{
+	width:110px;
+	height:90px;
+	color:#fff;
+	overflow: hidden;
+	border-radius:10px;
+	background:#2a62ff;
+	float:left;
+	margin-right:20px;
+	cursor:pointer;
+}
+.staticLeft_L{
+	width:90px;
+	height: 75px;
+	padding-top:15px;
+    line-height: 35px;
+    display: inline-block;
+    text-align:center;
+	float:left;
+}
+.staticLeft_R{
+	width:20px;
+	height: 90px;
+    line-height: 95px;
+    background:#1d54eb;
+    display: inline-block;
+    text-align:center;
+	float:right;
+}
+.staticLeft_R i{
+	font-size:20px;
+	color:#448aff;
+}
+.staticLeft_R:hover{
+	cursor:pointer;
+	background:#184ee2;
+}
+.menuList ul li{
+	width:90px;
+	height:90px;
+	color:#fff;
+	text-align:center;
+	border-radius:10px;
+	background:#2a62ff;
+	display:inline-block;
+	float: left;
+}
+.arrowArea{
+	display:none;
+	width:100%;
+	height:20px;
+	float: right;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+}
+.arrowArea i{
+	position: absolute;
+    top: -12px;
+    left: 30px;
+    color: #dee7ff;
+    font-size: 50px;
+}
+
+.horizontalScroll{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#horizontalScroll .mCustomScrollBox{overflow:visible}
+#horizontalScroll .mCSB_scrollTools.mCSB_scrollTools_horizontal{top:-30px}
+.horizontalScroll .topList{
+	display:inline-block;
+	max-height: 90px;
+    overflow-y: hidden;
+}
+.horizontalScroll li:first-child {
+    margin-left: 0;
+}
+.horizontalScroll li {
+    margin: 0 3px;
+    float: left;
+}
+#horizontalScroll .mCSB_horizontal.mCSB_inside>.mCSB_container{
+	margin-bottom: 20px;
+}
+.hideList{display:none;}
+.toggleHideList{display:inline-block;}
+/* .swiper-container{width: 0;height: 0;}
+.swiper-slide{width:110px;height: 90px;text-align: center;position:relative;}
+.swiper-slide a{display: block;color:#fff;margin-right:20px;height:100%;background: #448aff;border-radius:10px;}
+.swiper-slide a img{position:absolute;}
+.swiper-slide a:hover{color:#fff;}
+.swiper-slide a span{width:70px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;position:absolute;bottom:8px;left: 12px;}
+ */
+.hideList{
+	width:110px;
+	height: 90px;
+	text-align: center;
+	position:relative;
+	margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hideList a{display: block;color:#fff;margin-right:20px;height:100%;background: #448aff;border-radius:10px;}
+.hideList a img {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+.hideList a:hover{color:#fff;}
+.hideList a span{width:70px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;position:absolute;bottom:8px;left: 12px;}
+.hideList a.jsfz{
+	background:#448aff url("../images/blueIcon.png") 10px 0 no-repeat;
+}
+.hideList a.jsfz.active{
+	background:#1fc792 url("../images/greenIcon.png") 10px 0 no-repeat;
+}
+.hideList a.jssj{
+	background:#448aff url("../images/blueIcon.png") -65px -5px no-repeat;
+}
+.hideList a.jssj.active{
+	background:#1fc792 url("../images/greenIcon.png") -64px -4px no-repeat;
+}
+.hideList a.bjnj{
+	background:#448aff url("../images/blueIcon.png")  5px -85px no-repeat;
+}
+.hideList a.bjnj.active{
+	background:#1fc792 url("../images/greenIcon.png")  5px -85px no-repeat;
+}
+.hideList a.xssj{
+	background:#448aff url("../images/blueIcon.png")  -63px -86px no-repeat;
+}
+.hideList a.xssj.active{
+	background:#1fc792 url("../images/greenIcon.png") -63px -86px no-repeat;
+}
+.hideList a.xsfz{
+	background:#448aff url("../images/blueIcon.png")  7px -166px no-repeat;
+}
+.hideList a.xsfz.active{
+	background:#1fc792 url("../images/greenIcon.png")  7px -167px no-repeat;
+}
+.hideList a.skgl{
+	background:#448aff url("../images/blueIcon.png")  -65px -166px no-repeat;
+}
+.hideList a.skgl.active{
+	background:#1fc792 url("../images/greenIcon.png") -64px -166px no-repeat;
+}
+.hideList a.xqsz{
+	background:#448aff url("../images/blueIcon.png")  8px -250px no-repeat;
+}
+.hideList a.xqsz.active{
+	background:#1fc792 url("../images/greenIcon.png")  8px -245px no-repeat;
+}
+.hideList a.yhjs{
+	background:#448aff url("../images/blueIcon.png")  -61px -250px no-repeat;
+}
+.hideList a.yhjs.active{
+	background:#1fc792 url("../images/greenIcon.png")  -61px -245px no-repeat;
+}
+.hideList a.cdgl{
+	background:#448aff url("../images/blueIcon.png")  8px -333px no-repeat;
+}
+.hideList a.cdgl.active{
+	background:#1fc792 url("../images/greenIcon.png")  8px -329px no-repeat;
+}
+.hideList a.kmsz{
+	background:#448aff url("../images/blueIcon.png")  -65px -333px no-repeat;
+}
+.hideList a.kmsz.active{
+	background:#1fc792 url("../images/greenIcon.png")  -64px -329px no-repeat;
+}
+.hideList a.jsqx{
+	background:#448aff url("../images/blueIcon.png")  8px -415px no-repeat;
+}
+.hideList a.jsqx.active{
+	background:#1fc792 url("../images/greenIcon.png")  8px -415px no-repeat;
+}
+.gui-table tbody tr:nth-child(2n)>td{
+	background-color: #f2f2ff;
+}
+.gui-table tbody tr:nth-child(2n):hover{
+	background-color: #f2f2ff;
+}
+.gui-page-wapper{
+	color:#333333;
+	background:#fff;
+	margin-left: -200px;
+    left: 50%;
+    position: absolute;
+}
+.gui-page-item-active{
+	background-color: #448aff;
+    border-color: #448aff;
+}
+.gui-page-total,.gui-page-options{
+	color: #333;
+}
+.gui-btn-danger, .gui-btn-danger-disabled{
+	background:#fc5e5d;
+	color:#fff;
+}
+.permissionWrap .singlePermission{
+	background: #f3f2ff;
+}
+.permissionList{
+	background: #4e525e;
+}
+.permissionList ul li.active {
+	border-left:5px solid #438aff;
+    background: #3e424e;
+    color: #fff;
+}
+.permissionList ul li:hover, .permissionList ul li:hover i {
+	border-left:5px solid #438aff;
+    background: #3e424e;
+    color: #fff;
+}
+.permissionList ul li {
+    height: 45px;
+    line-height: 45px;
+    width: 120px;
+    color: #a8a8a8;
+    background: none;
+    border-left:5px solid #4e525e;
+    box-shadow: none;
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 12px;
+    cursor: pointer;
+}
+.loginWrapper{
+	position: relative;
+    width: 100%;
+    height: 100%;
+	background:url(../../../skin/baseui4JNEducation/images/loginWrapper.png) center center no-repeat;
+}
+.publictable{
+	width:330px;
+	height:auto;
+	position:absolute;
+	left: 54%;
+    top: 28%;
+}
+.publictable .btn{
+	width:330px;
+	margin-bottom:20px;
+	text-align: center;
+	position: relative;
+}
+.publictable .btn .fa-mobile{
+	font-size: 40px;
+    color: #527cce;
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 3px;
+}
+.publictable .btn .fa-unlock-alt{
+	font-size: 32px;
+    color: #527cce;
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 8px;
+}
+.publictable .gui-input{
+	width:100%;
+	height:45px;
+	border:1px solid #bdbdbd;
+	padding-left: 50px;
+	max-width:330px;
+}
+.publictable .gui-input:hover{
+	border:1px solid #bdbdbd;
+}
+.publictable .gui-btn{
+	width:100%;
+	height:45px;
+	background:#4776c8;
+	margin-top:10px;	
+}
+.publictable .gui-btn:hover{
+	background:#4776c8;	
+}
+/* 验证码样式 */
+#myCanvas{
+	width: 85px;
+	height: 37px;
+	padding: 3px;
+	z-index: 10;
+	bottom: 0;
+	position: absolute;
+	right: -10px;
+	top:1px;
+	border-left: 1px #e3e3e3 solid;
+	padding-left: 20px;
+}
+.indexWrapper{
+	width:100%;
+	min-width:1400px;
+	height:184px;
+	margin:0 auto;
+	background:url(../../../skin/baseui4JNEducation/images/indexWrapper.png) center no-repeat;
+}
+/* 选择机构 */
+.upbox {width:480px;  margin:0px auto;text-shadow:none;padding:25px 30px; background:#fff; position:relative;}
+#change_up {display:none;height:100%;position:fixed;_position:absolute;top:0px;background: rgba(0, 0, 0, 0.7) !important; /* IE无效，FF有效 border-radius: 5px; */ filter: alpha(opacity=70); background: #000;padding-top:130px; color:#000;z-index: 2;}
+#hb{height:240px;width:40px;position:absolute;top:0;right:0;cursor:pointer; background:url(../img/lrtk.jpg) 0 -920px no-repeat;/*IE浏览器只识别有背景图片或背景色的绝对定位的区块*/}
+#change_up .close{width:40px;height:40px;background:url(../images/closed.jpg) no-repeat;position:absolute;top:0;right:-40px;cursor:pointer;display:none;}
+.upclass { margin-top:15px;height:280px; overflow-y:auto}
+.upclass ul li{ width:98%;list-style:none; overflow:hidden;margin-bottom:12px;height:40px;line-height:40px; cursor:pointer}
+.fh3 a,.fh3 a:link {text-decoration:none;color:#fff;font-size: 16px;
+font-weight: bold;background:#e7604a;padding-left:20px;display:block}
+.fh3 a:hover {background:#1dbe8f}
+#logoimg {
+	height: 50px;
+padding: 10px 15px;
+display: block;
+float: left;
+background: #1B6AE0;
+margin-right: 15px;}
+.right { float:right}
+.fh1{
+	font-size:24px; font-family:"Microsoft YaHei";
+}
+.fh2 {
+font-size: 16px;
+padding: 0px 0px 40px 0px;
+color: #aaa;
+font-family: arial,sans-serif!important;
+font-weight: normal;
+padding-top: 5px;
+padding-left: 2px;
+}
+.fh2 span{
+	color:#ffa800;
+}
+/* 选择机构 */
+.indexPlate{
+	width:1400px;
+	height:auto;
+	margin:70px auto 0 auto;
+}
+.indexPlate li{
+	width:90px;
+	height:40px;
+	display:inline-block;
+	font-size:16px;
+	color:#2d2d2d;
+	text-align:center;
+	padding: 80px 55px;
+	position:relative;
+	float: left;
+	font-weight:bold;
+	cursor:pointer;
+}
+.indexPlate li .leftArrow{
+	position: absolute;
+	top: 86px;
+    right: -24px;
+    z-index: 1;
+    vertical-align: middle;
+}
+.indexPlate li .rightArrow{
+	position: absolute;
+	top: 86px;
+    left: -24px;
+    z-index: 1;
+    vertical-align: middle;
+}
+.indexPlate li.p_deepBlue{
+	width:80px;
+	height:80px;
+	padding: 60px 60px;
+	color:#fff;
+	font-size:30px;
+	background:#4776c8;
+	font-weight:normal;
+}
+.indexPlate li.p_white{
+	width:114px;
+	padding: 80px 43px;
+	background:#fff;
+}
+.indexPlate li.p_blue{
+	width:112px;
+	padding: 80px 44px;
+	background:#d5e5ff;
+}
+.indexPlate li.p_gray{
+	width:130px;
+	padding: 80px 35px;
+	background:#eef4ff;
+}
