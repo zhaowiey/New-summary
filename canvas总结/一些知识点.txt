@@ -1,0 +1,55 @@
+//1.动态生成的Canvas对象将不支持getContext方法
+
+  	要使IE中的Canvas对象支持getContext等方法需要调用excanvas中的G_vmlCanvasManager_.initElement方法,由于最后的
+ 	G_vmlCanvasManager = G_vmlCanvasManager_;
+	使得G_vmlCanvasManager的作用域是当前window,所以在需要初始化Canvas的时候可以采用如下的方法:
+	var cav = document.createElement("canvas");
+	if(!cav.getContext) { G_vmlCanvasManager.initElement(cav); }
+
+	var ctx = cav.getContext("2d");
+
+
+//canvas.toDataURL([type, encoderOptions]);
+	canvas 是 DOM 元素<canvas>对象；参数type指定图片类型，如果指定的类型不被支持则以默认值image/png替代；
+	encoderOptions可以为image/jpeg或image/webp类型的图片设置图片质量，取值0-1，超出则以默认值0.92替代。
+
+--------------------字体设置----------------------------------
+//textBaseline  修改基准线 
+
+	alphabetic ： 默认。文本基线是普通的字母基线。
+
+	top ： 文本基线是 em 方框的顶端。
+
+	hanging ： 文本基线是悬挂基线。
+
+	middle ：文本基线是 em 方框的正中。
+
+	ideographic ： 文本基线是表意基线。
+
+	bottom ：文本基线是 em 方框的底端。
+	
+		//用法
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		ctx.font="20px Arial";
+		ctx.textBaseline = "bottom";
+		ctx.fillText('你想对我说什么',0,20);
+//设置样式
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	ctx.font="italic bold 40px 微软雅黑 ";
+	ctx.textBaseline = "top";
+	ctx.fillStyle = 'red';
+	ctx.fillText('a你想对我说什么',0,20);
+
+//textAlign 参数：left(默认，文本左对齐),right（文本右对齐）,center（文本在指定位置居中）,start（文本开始位置）,end（文本结束位置）
+
+
+strokeStyle = color 可设颜色
+strokeStyle = gradient  可设渐变对象
+strokeStyle  = pattern  可创建 pattern 笔触的 pattern 对象
+
+shadowOffsetX  阴影距形状的水平距离
+shadowOffsetY  阴影距形状的垂直距离
+shadowBlur  阴影的模糊级别，这里是高斯模糊，默认值为0
+shadowColor  阴影的颜色
